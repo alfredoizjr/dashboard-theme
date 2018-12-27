@@ -4,7 +4,7 @@ It's a simple theme for you administrator side of you app
 
 ## Example main page
 
-![alt text](assets/img/page.PNG "Description goes here")
+![alt text](assest/img/page.PNG "Description goes here")
 
 ## Example login page
 
