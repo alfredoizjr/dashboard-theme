@@ -1,0 +1,187 @@
+/* ================================ Import fonts from google ============================= */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i');
+
+/* ====================================================================================== */
+
+body {
+    background-color: #e9ecef;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#btn-menu {
+   display: none;
+   color: #6c757c;
+}
+
+#main-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-header {
+    width: 100%;
+    padding: 2em;
+}
+
+.btn{
+   cursor: pointer; 
+}
+
+/* ==== Sidebar elements ==== */
+
+#sidebar {
+    width: 230px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background-color: #6c757d;
+}
+
+.sidebar-link-wrap {
+    margin-top: 2em;
+}
+
+.sidebar-links {
+    list-style: none;
+}
+
+.sidebar-links li{
+ padding: 9px;
+ cursor: pointer;
+}
+
+.sidebar-links li a{
+   color: #ddd;
+   transition: all 0.1s;
+   text-decoration-line: none;
+}
+
+.sidebar-links li:hover a{
+    color: #fff;
+    
+ }
+ 
+
+.sidebar-element-divider {
+    border-bottom: 1px solid #868e96;
+   
+}
+
+
+.content {
+    width: 100%;
+    position: relative;
+    margin-left: 230px;
+    padding-left: 1em;
+}
+
+.row-mod {
+    margin-right: 230px;
+}
+
+
+/* ============== Card variation ====================*/
+
+.card-body-danger {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    border-top: 2px solid #dc3545;
+}
+
+.card-body-info {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    border-top: 2px solid #28a745;
+}
+
+.card-header-mod {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    border: none;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+
+
+.sidebar-links .active {
+    font-weight: 800;
+}
+
+/* ============== Login page ====================*/
+
+.login {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20%;
+    
+}
+
+.login .card-header-mod h1,h2,h3,h4,h5,h6 {
+    margin-top: 50px;
+    color: #495057;
+}
+
+.logo-login {
+    position: absolute;
+    background-color: #6c757d;
+    color: #fff;
+    padding: 11px;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    left: 40%;
+    top: -30px;
+    font-size: 30px;
+}
+
+/* ================ preloading  ==================*/
+
+.spinner {
+    position: relative;
+    top: 30%;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+  
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+
+  #loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #868e96;
+    top: 0;
+    left: 0; 
+  }

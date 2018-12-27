@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+    #sidebar {
+       display: none;
+       z-index: 900;
+    }
+
+    .mod-nav {
+        flex-direction: unset;
+        overflow: hidden;
+    }
+
+    .mod-nav li{
+        float: left;
+    }
+
+    .mod-nav li a{
+        display: block;
+        margin: 12px;
+    }
+
+    .header-content {
+        left: 0;
+    }
+
+    .content {
+        width: 100%;
+        position: relative;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .row-mod {
+        margin-right: -15px;
+    }
+
+    #btn-menu {
+        display: block;
+     }
+
+     .card {
+        margin: 5px; 
+     }
+  }
